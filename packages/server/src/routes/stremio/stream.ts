@@ -53,7 +53,7 @@ function generateStrmFilename(
   if (type === 'series' && parsedId?.season && parsedId?.episode) {
     const season = String(parsedId.season).padStart(2, '0');
     const episode = String(parsedId.episode).padStart(2, '0');
-    baseName += ` S${season}E${episode}`;
+    baseName += ` s${season}.e${episode}`;
   }
 
   return `${baseName}.strm`;
