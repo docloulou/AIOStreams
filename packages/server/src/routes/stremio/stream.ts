@@ -45,8 +45,8 @@ function generateStrmFilename(
   let baseName = toTitleCase(metadata?.title || 'Unknown');
 
   // Add year for movies
-  if (metadata?.year && type === 'movie') {
-    baseName += ` (${metadata.year})`;
+  if (metadata?.year) {
+    baseName += ` ${metadata.year}`;
   }
 
   // Add season/episode for series
