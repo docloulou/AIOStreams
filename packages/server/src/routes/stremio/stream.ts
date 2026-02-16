@@ -46,7 +46,7 @@ function generateStrmFilename(
 
   // Add year for movies
   if (metadata?.year) {
-    baseName += ` ${metadata.year}`;
+    baseName += ` (${metadata.year})`;
   }
 
   // Add season/episode for series
